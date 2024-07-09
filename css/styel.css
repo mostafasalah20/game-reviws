@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #272b30;
+}
+
+/* --------------srart ------------------navbar--------------- */
+.navbar {
+  width: 90%;
+  background-color:hsl(226, 36%, 36% )!important;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.img-logo{
+  width: 30px;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-family: "cursive", "Nerko One", ;
+  font-weight: 600;
+  font-size: 25px;
+}
+.active{
+  color: #176eb6 !important;
+}
+ul a {
+  color: #fff !important;
+  font-family: "Recursive", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+
+
+
+/* --------------end ------------------navbar--------------- */
+/* ----------------srart------loding----------------------- */
+.lodin{
+  margin-top: 30px;
+  justify-content: center;
+}
+.loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+}
+  .loader:before,
+  .loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+  }
+  .loader:after {
+    color: #FF3D00;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+  }
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
+  }
+}
+/* ----------------srart------loding----------------------- */
+
+
+
+/* --------------start --------------------img_home------------- */
+.home_img {
+  max-height: 30vh;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+
+
+/* --------------end --------------------img_home------------- */
+
+
+/* --------------start --------------------crad------------- */
+
+.cont_crad .container {
+  margin-top: 60px;
+
+}
+
+.card_contact {
+  background-color: rgb(39, 43, 48);
+  border: #202122 solid 1px;
+  text-align: center;
+  transition: all 1s;
+  border-radius: 10px;
+}
+
+.card_contact:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  color: #fff;
+  border: none;
+  padding: 10px;
+  background-color: rgb(39, 43, 48);
+  cursor: pointer;
+  height: 320px;
+  overflow: hidden;
+
+  a {
+    color: #fff !important;
+    font-family: "cursive", "Nerko One";
+  }
+
+}
+
+p {
+  margin: 10px 0 0 0;
+  font-family: "Playwrite GB S", "cursive";
+}
+.catog span{
+  background-color: #32383e;
+  border: #272b30;
+  font-family:"Playwrite GB S", "cursive";
+  font-size: 8px;
+}
+.catog span:hover{
+  background-color: #494b4d;
+  border: #272b30;
+}
+
+.bord {
+  width: 100%;
+  height: 1px;
+  background-color: #202122;
+  margin: 5px 0;
+}
+
+.card-body {
+  padding: 0 !important;
+  margin-top: 5px;
+
+  span {
+    font-family: "Recursive", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+  }
+}
+
+
+.catog {
+  padding: 0px 5px 10px 10px;
+
+  a {
+    color: #fff !important;
+    font-family: "cursive";
+    background-color:#32383e;
+    border: #494b4d 1px solid;
+    font-size: 10px !important;
+  }
+}
+
+.details span{
+  font-size: 13px;
+  font-weight: 900;
+}
+.details .mt-4{
+  font-size: 15px;
+  font-weight: 600;
+}
+#close:hover{
+  cursor: pointer;
+}
